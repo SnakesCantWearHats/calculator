@@ -1,0 +1,80 @@
+.everything {
+  display: block;
+  height: 100%;
+  background: url('https://wallpaperbrowse.com/media/images/704532.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+.app {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 20px;
+  grid-template:
+    'Name'
+    'The calculator';
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header {
+  font-size: 5rem;
+}
+
+.calc-body {
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+    'first'
+    'second'
+    'third'
+    'fourth'
+    'fifth';
+  border: solid;
+  border-color: rgb(255, 255, 255, 0.5);
+  padding: 1.4rem;
+  background: rgba(13,152,186,0.2);
+  margin: auto;
+}
+
+.row {
+  display: grid;
+  grid-template: 'one two three four';
+  grid-gap: 10px;
+}
+
+.screen {
+  border: solid;
+  border-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.first {
+  justify-items: end;
+
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.symbol {
+  justify-self: end;
+}
+
+button {
+  padding: 0.7rem;
+  border-width: 0.2rem;
+  border-color: rgb(255, 255, 255, 0.5);
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+footer { 
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  padding: 2rem;
+}
